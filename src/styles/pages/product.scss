@@ -1,0 +1,349 @@
+.product {
+	.feedback {
+		background-color: #ffffff;
+		margin: 0;
+		padding-top: 80px;
+		margin-top: -50px;
+		padding-bottom: 50px;
+		@media (max-width: 1439px){
+			padding-top: 5.56vw;
+			margin-top: -3.47vw;
+			padding-bottom: 3.47vw;
+		}
+		@media (max-width: 768px){
+			padding-top: 10vw;
+			padding-bottom: 12vw;
+		}
+	}
+	&__top {
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+	}
+	&__breadcrumbs {
+		padding-top: 16px;
+		@media (max-width: 1439px){
+			padding-top: 1.11vw;
+		}
+		ul {
+			display: flex;
+			align-items: center;
+			li {
+				color: #30323A;
+				font-size: 14px;
+				font-family: Suisse Intl;
+				font-weight: 450;
+				line-height: 92.8%;
+				position: relative;
+				margin-right: 15px;
+				padding-right: 15px;
+				@media (max-width: 1439px){
+					font-size: 0.97vw;
+					margin-right: 1.04vw;
+					padding-right: 1.04vw;
+				}
+				@media (max-width: 768px){
+					font-size: 3vw;
+					margin-right: 5vw;
+					padding-right: 5vw;
+				}
+				&::before{
+					content:'';
+					position: absolute;
+					top: 50%;
+					right: 0;
+					width: 8px;
+					height: 8px;
+					display: block;
+					transform: translate(50%, -50%);
+					background: url('../images/product/arrow-black.png') 0 0 / 100% 100% no-repeat;
+					@media (max-width: 1439px){
+						width: 0.56vw;
+						height: 0.56vw;
+					}
+					@media (max-width: 768px){
+						width: 1.5vw;
+						height: 1.5vw;
+					}
+				}
+				&:last-child{
+					margin: 0;
+					padding: 0;
+					&::before{
+						display: none;
+					}
+				}
+				a {
+					display: block;
+					opacity: 0.2;
+				}
+			}
+		}
+	}
+	&__title {
+		display: flex;
+		align-items: flex-end;
+		@media (max-width: 768px){
+			margin-top: 4vw;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		img {
+			border-radius: 21px;
+			display: block;
+			width: 161px;
+			height: 154px;
+			margin-bottom: 10px;
+			@media (max-width: 1439px){
+				border-radius: 1.46vw;
+				width: 11.18vw;
+				height: 10.69vw;
+				margin-bottom: 0.69vw;
+			}
+			@media (max-width: 768px){
+				width: 20vw;
+				height: 20vw;
+			}
+		}
+		span {
+			margin-left: 24px;
+			color: #30323A;
+			font-size: 150.288px;
+			font-family: Suisse Intl;
+			font-weight: 500;
+			line-height: 92.8%;
+			letter-spacing: -6.763px;
+			display: block;
+			@media (max-width: 1439px){
+				letter-spacing: -0.42vw;
+				margin-left: 1.67vw;
+				font-size: 10.42vw;
+			}
+			@media (max-width: 768px){
+				font-size: 11vw;
+				margin: 0;
+				margin-top: 4vw;
+			}
+		}
+	}
+	&__content {
+		&-container {
+			position: relative;
+			z-index: 2;
+			border-radius: 0 0 41px 41px;
+			padding-bottom: 24px;
+			background: #E8ECFF;
+			@media (max-width: 1439px){
+				border-radius: 0 0 2.85vw 2.85vw;
+				padding-bottom: 1.67vw;
+			}
+			@media (max-width: 768px){
+				
+			}
+		}
+	}
+}
+.content-product {
+	padding-top: 32px;
+	display: flex;
+	@media (max-width: 1439px){
+		padding-top: 2.22vw;
+	}
+	@media (max-width: 768px){
+		flex-wrap: wrap;
+	}
+	&__nav {
+		padding-top: 94px;
+		min-height: 100%;
+		@media (max-width: 1439px){
+			padding-top: 6.53vw;
+		}
+		@media (max-width: 768px){
+			flex: 1 1 100%;
+			padding-top: 4vw;
+		}
+		&-btns {
+			position: sticky;
+			top: 90px;
+			left: 0;
+			width: 372px;
+			@media (max-width: 1439px){
+				top: 6.25vw;
+				width: 25.83vw;
+			}
+			@media (max-width: 768px){
+				position: static;
+				width: 100%;
+			}
+		}
+		&-btn {
+			display: block;
+			width: 100%;
+			color: #26272B;
+			font-size: 14px;
+			font-family: Suisse Intl;
+			font-weight: 450;
+			line-height: 92.8%;
+			border-radius: 75px;
+			border: 1px solid #000;
+			padding: 32px;
+			position: relative;
+			transition: all 0.3s ease 0s;
+			cursor: pointer;
+			margin-top: 20px;
+			@media (max-width: 1439px){
+				font-size: 0.97vw;
+				border-radius: 5.21vw;
+				border: 0.07vw solid #000;
+				padding: 2.22vw;
+				margin-top: 1.39vw;
+			}
+			@media (max-width: 768px){
+				font-size: 4vw;
+				padding: 4vw;
+				margin-top: 4vw;
+			}
+			&:first-child{
+				margin: 0;
+			}
+			&::before{
+				content:'';
+				opacity: 0;
+				position: absolute;
+				top: 50%;
+				right: 32px;
+				width: 8px;
+				height: 8px;
+				display: block;
+				transform: translate(0, -50%);
+				background: url('../images/product/arrow-white.png') 0 0 / 100% 100% no-repeat;
+				@media (max-width: 1439px){
+					right: 2.22vw;
+					width: 0.56vw;
+					height: 0.56vw;
+				}
+				@media (max-width: 768px){
+					right: 4vw;
+					width: 2vw;
+					height: 2vw;
+				}
+			}
+			&:hover{
+				opacity: 0.7;
+			}
+			&.js-active {
+				border: 0px solid #000;
+				border-radius: 66px;
+				background: #3156E9;
+				color: #FFF;
+				@media (max-width: 1439px){
+					border-radius: 4.58vw;
+				}
+				&::before{
+					opacity: 1;
+				}
+			}
+		}
+	}
+	&__tables {
+		flex: 1 1 auto;
+	}
+	&__title {
+		margin-top: 32px;
+		color: #26272B;
+		font-size: 32px;
+		font-family: Suisse Intl;
+		font-weight: 500;
+		line-height: 92.8%;
+		letter-spacing: -1.44px;
+		@media (max-width: 1439px){
+			margin-top: 2.22vw;
+			font-size: 2.22vw;
+			letter-spacing: -0.1vw;
+		}
+		@media (max-width: 768px){
+			font-size: 6vw;
+			margin-top: 8vw;
+		}
+	}
+	&__table {
+		width: 100%;
+		margin-top: 32px;
+		border: 1px solid rgba($color: #000000, $alpha: 0.2);
+		border-radius: 30px 30px 50px 50px;
+		@media (max-width: 1439px){
+			margin-top: 2.22vw;
+			border: 0.07vw solid rgba($color: #000000, $alpha: 0.2);
+			border-radius: 2.08vw 2.08vw 3.47vw 3.47vw;
+		}
+		@media (max-width: 768px){
+			margin-top: 3vw;
+		}
+		overflow: hidden;
+		thead {
+			tr{
+				background: rgba($color: #3156E9, $alpha: 0.4);
+				th{
+					text-align: left;
+					color: #FFF;
+					padding: 28px 35px;
+					font-size: 14px;
+					font-family: Suisse Intl;
+					font-weight: 450;
+					line-height: 118.8%;
+					@media (max-width: 1439px){
+						padding: 1.94vw 2.43vw;
+						font-size: 0.97vw;
+					}
+					@media (max-width: 768px){
+						font-size: 3vw;
+						padding: 4vw 2vw;
+					}
+				}
+			}
+		}
+		tbody {
+			tr{
+				&:nth-child(odd){
+					background: rgba($color: #E8ECFF, $alpha: 0.1);
+				}
+				&:nth-child(even){
+					background: rgba($color: #3156E9, $alpha: 0.1);
+				}
+				td{
+					color: #000;
+					padding: 20px 35px;
+					font-size: 14px;
+					font-family: Suisse Intl;
+					font-weight: 450;
+					line-height: 118.8%;
+					@media (max-width: 1439px){
+						padding: 1.39vw 2.43vw;
+						font-size: 0.97vw;
+					}
+					@media (max-width: 768px){
+						font-size: 3vw;
+						padding: 4vw 2vw;
+					}
+					span {
+						display: inline-block;
+						padding-left: 40px;
+						@media (max-width: 1439px){
+							padding-left: 2.78vw;
+						}
+						@media (max-width: 768px){
+							display: block;
+							padding-left: 0;
+							padding-top: 1vw;
+						}
+						&:first-child{
+							padding: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

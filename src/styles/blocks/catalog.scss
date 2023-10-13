@@ -1,0 +1,177 @@
+.catalog {
+	position: relative;
+	z-index: 2;
+	margin-top: -50px;
+	padding-top: 24px;
+	padding-bottom: 50px;
+	border-radius: 41px;
+	background: #FFF;
+	@media (max-width: 1439px){
+		margin-top: -3.47vw;
+		padding-top: 1.67vw;
+		padding-bottom: 3.47vw;
+		border-radius: 2.85vw;
+	}
+	@media (max-width: 768px){
+		padding-top: 6vw;
+	}
+	&__container {
+	}
+	&__top {
+		display: flex;
+	}
+	&__title {
+		flex: 1 1 auto;
+		font-size: 58.552px;
+		font-family: Suisse Intl;
+		font-weight: 500;
+		line-height: 92.8%;
+		letter-spacing: -2.635px;
+		@media (max-width: 1439px){
+			font-size: 4.03vw;
+			letter-spacing: -0.15vw;
+		}
+		@media (max-width: 768px){
+			font-size: 8vw;
+		}
+	}
+	&__items {
+		margin: 140px -18px 0;
+		@media (max-width: 1439px){
+			margin: 9.72vw -1.25vw 0;
+		}
+		@media (max-width: 768px){
+			margin-top: 8vw;
+		}
+	}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item {
+		flex: 0 1 20%;
+		padding: 30px 18px 0;
+		display: none;
+		&:nth-child(-n+10){
+			display: block;
+		}
+		@media (max-width: 1439px){
+			padding: 2.08vw 1.25vw 0;
+		}
+		@media (max-width: 768px){
+			flex: 0 1 50%;
+			padding: 3vw 2vw 0;
+		}
+	}
+	&__card {
+		min-height: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		position: relative;
+		border-radius: 41px;
+		border: 1px solid rgba(0, 0, 0, 0.17);
+		background: #F5F5F5;
+		padding: 20px;
+		overflow: hidden;
+		@media (max-width: 1439px){
+			min-height: 20.83vw;
+			border-radius: 2.85vw;
+			border: 0.07vw solid rgba(0, 0, 0, 0.17);
+			padding: 1.39vw;
+		}
+		@media (max-width: 768px){
+			min-height: 35vw;
+			padding: 2.5vw;
+		}
+		&::before{
+			content:'';
+			opacity: 0.2;
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: #ffffff;
+		}
+		&-name {
+			color: #26272B;
+			font-size: 23px;
+			font-family: Suisse Intl;
+			font-weight: 450;
+			line-height: 92.8%;
+			letter-spacing: -0.46px;
+			position: relative;
+			z-index: 2;
+			@media (max-width: 1439px){
+				font-size: 1.60vw;
+				letter-spacing: 0;
+			}
+			@media (max-width: 768px){
+				font-size: 4vw;
+			}
+		}
+		&-btn {
+			position: relative;
+			z-index: 2;
+			display: block;
+			margin-left: auto;
+			width: 55px;
+			height: 55px;
+			background: url('../images/catalog/btn.png') 0 0 / 100% 100% no-repeat;
+			transition: all 0.3s ease 0s;
+			transform: rotate(-45deg);
+			&:hover{
+				opacity: 0.7;
+			}
+			@media (max-width: 1439px){
+				width: 3.82vw;
+				height: 3.82vw;
+			}
+			@media (max-width: 768px){
+				width: 8vw;
+				height: 8vw;
+			}
+		}
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: all 0.3s ease 0s;
+		}
+		&:hover{
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+	&__show-more {
+		display: block;
+		width: 100%;
+		cursor: pointer;
+		margin-top: 20px;
+		color: #FFF;
+		font-size: 23px;
+		font-family: Suisse Intl;
+		font-weight: 450;
+		line-height: 92.8%;
+		letter-spacing: -0.46px;
+		height: 85px;
+		text-align: center;
+		@media (max-width: 1439px){
+			height: 5.90vw;
+			margin-top: 1.39vw;
+			font-size: 1.60vw;
+			letter-spacing: 0;
+		}
+		@media (max-width: 768px){
+			height: 15vw;
+			margin-top: 5vw;
+			font-size: 4vw;
+		}
+	}
+}

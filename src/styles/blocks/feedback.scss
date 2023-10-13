@@ -1,0 +1,107 @@
+.feedback {
+	margin-top: 24px;
+	margin-bottom: 130px;
+	@media (max-width: 1439px){
+		margin-top: 1.67vw;
+		margin-bottom: 9.03vw;
+	}
+	@media (max-width: 768px){
+		margin-top: 6vw;
+		margin-bottom: 15vw;
+	}
+	&__container {
+		display: flex;
+	}
+	&__desc {
+		color: #26272B;
+		font-size: 14px;
+		padding-left: 56px;
+		font-family: Suisse Intl;
+		font-weight: 450;
+		line-height: 111.8%;
+		flex: 1 1 auto;
+		@media (max-width: 1439px){
+			font-size: 0.97vw;
+			padding-left: 3.89vw;
+		}
+		@media (max-width: 768px){
+			font-size: 2vw;
+		}
+	}
+}
+.form {
+	flex: 0 0 540px;
+	@media (max-width: 1439px){
+		flex: 0 0 37.50vw;
+	}
+	@media (max-width: 768px){
+		flex: 0 0 70%;
+	}
+	&__title {
+		font-size: 58.552px;
+		font-family: Suisse Intl;
+		font-weight: 500;
+		line-height: 92.8%;
+		letter-spacing: -2.635px;
+		margin-bottom: 90px;
+		@media (max-width: 1439px){
+			font-size: 4.03vw;
+			letter-spacing: -0.15vw;
+			margin-bottom: 6.25vw;
+		}
+		@media (max-width: 768px){
+			font-size: 8vw;
+			margin-bottom: 8vw;
+		}
+	}
+	&__input {
+		display: block;
+		width: 100%;
+		background-color: transparent;
+		border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+		margin-top: 30px;
+		padding-bottom: 15px;
+		color: #26272B;
+		font-size: 14px;
+		font-family: Suisse Intl;
+		font-weight: 450;
+		line-height: 92.8%;
+		@media (max-width: 1439px){
+			border-bottom: 0.07vw solid rgba($color: #000000, $alpha: 0.2);
+			margin-top: 2.08vw;
+			padding-bottom: 1.04vw;
+			font-size: 0.97vw;
+		}
+		@media (max-width: 768px){
+			margin-top: 6vw;
+			padding-bottom: 3px;
+			font-size: 4vw;
+		}
+	}
+	&__btn {
+		margin-top: 44px;
+		background: rgba($color: #3156E9, $alpha: 0.2);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 85px;
+		color: #3156E9;
+		font-size: 23px;
+		font-family: Suisse Intl;
+		font-weight: 450;
+		line-height: 92.8%;
+		letter-spacing: -0.46px;
+		@media (max-width: 1439px){
+			margin-top: 3.06vw;
+			height: 5.90vw;
+			font-size: 1.60vw;
+			letter-spacing: 0px;
+		}
+		@media (max-width: 768px){
+			height: 15vw;
+			margin-top: 10vw;
+			font-size: 4vw;
+		}
+	}
+}

@@ -1,0 +1,151 @@
+.footer {
+	padding: 45px 0;
+	border-radius: 50px 50px 0 0;
+	background: #3156E9;
+	@media (max-width: 1439px){
+		padding: 3.13vw 0;
+		border-radius: 3.47vw 3.47vw 0 0;
+	}
+	@media (max-width: 768px){
+		padding: 6vw 0;
+	}
+	a {
+		transition: all 0.3s ease 0s;
+		&:hover{
+			opacity: 0.7;
+		}
+	}
+}
+.top-footer {
+	display: flex;
+	&__left {
+
+	}
+		&__logo {
+			display: block;
+			width: 78px;
+			height: 75px;
+			@media (max-width: 1439px){
+				width: 5.42vw;
+				height: 5.21vw;
+			}
+			@media (max-width: 768px){
+				width: 12vw;
+				height: 12vw;
+			}
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	&__body {
+		@media (max-width: 768px){
+			margin-left: 4vw;
+		}
+	}
+		&__tels {
+			a {
+				display: inline-block;
+				margin-top: 10px;
+				color: #ffffff;
+				font-size: 88.541px;
+				font-family: Suisse Intl;
+				font-weight: 500;
+				line-height: 92.8%;
+				letter-spacing: -3.984px;
+				@media (max-width: 1439px){
+					margin-top: 0.69vw;
+					font-size: 6.11vw;
+					letter-spacing: -0.28vw;
+				}
+				@media (max-width: 768px){
+					margin-top: 5vw;
+					font-size: 7vw;
+				}
+				&:first-child{
+					margin: 0;
+				}
+				span {
+					opacity: 0.26;
+				}
+			}
+		}
+		&__info {
+			color: #FFF;
+			font-size: 14px;
+			font-family: Suisse Intl;
+			font-weight: 450;
+			line-height: 153.8%;
+			margin-top: 48px;
+			display: flex;
+			@media (max-width: 1439px){
+				font-size: 0.97vw;
+				margin-top: 3.33vw;
+			}
+			@media (max-width: 768px){
+				font-size: 3vw;
+				margin-top: 8vw;
+			}
+		}
+			&__schedule {
+			}
+			&__address {
+				margin-left: 115px;
+				@media (max-width: 1439px){
+					margin-left: 7.99vw;
+				}
+			}
+}
+.bottom-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	color: #FFF;
+	font-size: 14px;
+	font-family: Suisse Intl;
+	font-weight: 450;
+	line-height: 92.8%;
+	margin-top: 200px;
+	@media (max-width: 1439px){
+		font-size: 0.97vw;
+		margin-top: 13.89vw;
+	}
+	@media (max-width: 768px){
+		font-size: 2vw;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&__left {
+		@media (max-width: 768px){
+			order: 3;
+		}
+	}
+	&__center {
+		flex: 1 1 auto;
+		@media (max-width: 768px){
+			flex: 1 1 100%;
+			order: 1;
+			display: flex;
+		}
+	}
+	&__menu {
+		.menu__link {
+			color: #FFF;
+			@media (max-width: 768px){
+				font-size: 3vw;
+			}
+		}
+	}
+	&__right {
+		text-align: right;
+		line-height: 143.8%;
+		@media (max-width: 768px){
+			margin-top: 5vw;
+			order: 2;
+			text-align: left;
+			br {
+				display: none;
+			}
+		}
+	}
+}

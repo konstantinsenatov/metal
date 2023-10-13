@@ -1,0 +1,108 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'page'
+		};
+
+block main
+	.product
+		.product__top.top-block 
+			.container
+				.product__breadcrumbs
+					ul 
+						li 
+							a(href="") Главная 
+						li 
+							span Прайс
+				.product__title 
+					img(src="images/product/1.png", alt="alt")
+					span Арматура
+		.product__content-container 
+			.container
+				.product__content.content-product
+					.content-product__nav.left-space 
+						.content-product__nav-btns
+							a(href="").click.content-product__nav-btn.js-active Гладкая
+							a(href="").click.content-product__nav-btn Рифленая
+					.content-product__tables 
+						.content-product__table-wrapper
+							.content-product__title Гладкая
+							table(border="0" cellspacing="0" cellpadding="0").content-product__table
+								thead
+									tr
+										th Наименование
+										th Длина
+										th Цена
+								tbody
+									tr
+										td Арматура А-3 500С 6 мм
+										td 6 м
+										td 
+											span 11 руб. / метр 
+											span 49500 руб. / тонну
+									tr
+										td Арматура А-3 500С 6 мм
+										td 6 м
+										td 
+											span 11 руб. / метр 
+											span 49500 руб. / тонну
+									tr
+										td Арматура А-3 500С 6 мм
+										td 6 м
+										td 
+											span 11 руб. / метр 
+											span 49500 руб. / тонну
+									tr
+										td Арматура А-3 500С 6 мм
+										td 6 м
+										td 
+											span 11 руб. / метр 
+											span 49500 руб. / тонну
+									tr
+										td Арматура А-3 500С 6 мм
+										td 6 м
+										td 
+											span 11 руб. / метр 
+											span 49500 руб. / тонну
+						.content-product__table-wrapper
+							.content-product__title Рифленая
+							table(border="0" cellspacing="0" cellpadding="0").content-product__table
+								thead
+									tr
+										th Наименование
+										th Длина
+										th Цена
+								tbody
+									tr
+										td Арматура А-3 500С 6 мм
+										td 6 м
+										td 
+											span 11 руб. / метр 
+											span 49500 руб. / тонну
+									tr
+										td Арматура А-3 500С 6 мм
+										td 6 м
+										td 
+											span 11 руб. / метр 
+											span 49500 руб. / тонну
+									tr
+										td Арматура А-3 500С 6 мм
+										td 6 м
+										td 
+											span 11 руб. / метр 
+											span 49500 руб. / тонну
+									tr
+										td Арматура А-3 500С 6 мм
+										td 6 м
+										td 
+											span 11 руб. / метр 
+											span 49500 руб. / тонну
+									tr
+										td Арматура А-3 500С 6 мм
+										td 6 м
+										td 
+											span 11 руб. / метр 
+											span 49500 руб. / тонну
+		include ../blocks/feedback

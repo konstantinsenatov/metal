@@ -1,0 +1,114 @@
+.information {
+	position: relative;
+	z-index: 2;
+	margin-top: -50px;
+	padding-bottom: 50px;
+	border-radius: 50px 50px 0 0;
+	background: #3156E9;
+	@media (max-width: 1439px){
+		margin-top: -3.47vw;
+		padding-bottom: 3.47vw;
+		border-radius: 3.47vw 3.47vw 0 0;
+	}
+	@media (max-width: 768px){
+		padding-bottom: 15vw;
+	}
+	&__container {
+	}
+		&__items {
+		}
+			&__row {
+				display: flex;
+				@media (max-width: 768px){
+					flex-wrap: wrap;
+				}
+			}
+				&__item {
+					padding: 20px;
+					flex: 0 1 20%;
+					border-left: 1px solid rgba($color: #E8ECFF, $alpha: 0.2);
+					@media (max-width: 1439px){
+						padding: 1.39vw;
+						border-left: 0.07vw solid rgba($color: #E8ECFF, $alpha: 0.2);
+					}
+					&:first-child{
+						border-left: 1px solid rgba($color: #E8ECFF, $alpha: 0);
+						@media (max-width: 1439px){
+							border-left: 0.07vw solid rgba($color: #E8ECFF, $alpha: 0);
+						}
+					}
+					@media (max-width: 768px){
+						border-left: 0vw solid rgba($color: #E8ECFF, $alpha: 0);
+						flex: 1 1 50%;
+						margin-top: 6vw;
+					}
+				}
+					&__column {
+						height: 100%;
+						display: flex;
+						flex-direction: column;
+					}
+						&__name {
+							color: #E8ECFF;
+							font-size: 14px;
+							font-family: Suisse Intl;
+							font-weight: 450;
+							line-height: 92.8%;
+							@media (max-width: 1439px){
+								font-size: 0.97vw;
+							}
+							@media (max-width: 768px){
+								font-size: 3vw;
+								text-align: center;
+							}
+						}
+						&__icon {
+							padding: 70px 30px;
+							flex: 1 1 auto;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							height: auto;
+							@media (max-width: 1439px){
+								padding: 4.86vw 2vw;
+							}
+							@media (max-width: 768px){
+								text-align: center;
+								flex: 0 1 auto;
+								height: 30vw;
+								padding: 0;
+							}
+							&-inner {
+								max-width: 100%;
+								@media (max-width: 768px){
+									display: flex;
+									justify-content: center;
+									align-items: center;
+									max-width: 25vw;
+								}
+							}
+							img {
+								display: block;
+								width: 100%;
+								max-width: 100%;
+								height: 100%;
+								max-height: 100%;
+							}
+						}
+						&__desc {
+							color: #FFF;
+							font-size: 23px;
+							font-family: Suisse Intl;
+							font-weight: 450;
+							line-height: 110.3%;
+							letter-spacing: -0.23px;
+							@media (max-width: 1439px){
+								letter-spacing: 0;
+								font-size: 1.60vw;
+							}
+							@media (max-width: 768px){
+								text-align: center;
+								font-size: 4vw;
+							}
+						}
+}
